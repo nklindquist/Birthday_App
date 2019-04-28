@@ -22,8 +22,19 @@ public class MainActivity extends AppCompatActivity {
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
                 String date = ((1 + month) + "/" + dayOfMonth + "/" + year + " is a birthday! Don't forget to send your wishes.");
                 myDate.setText(date);
-
             }
+        });
+
+        final Imagebutton setDate = findViewById(R.id.myDate);
+        setDate.setOnClickListener(v -> {
+            Log.d(TAG, "Who's birthday is this day?: ");
+            startSetDate();
+        });
+
+        final Imagebutton message = findViewById(R.id.sendMessage);
+        message.setOnClickListener(v -> {
+            Log.d(TAG, "Happy Birthday message sent :) ");
+            startmessage();
         });
     }
 }
