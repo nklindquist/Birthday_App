@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#80D8FF"
     android:orientation="vertical"
     tools:context=".MainActivity">
     />
 
-    <ImageButton
+    <Button
         android:id="@+id/myDate"
-        android:layout_width="244dp"
-        android:layout_height="116dp"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="100dp"
-        android:text="MARK THE DATE"
+        android:text="BIRTHDAY REMINDER CALENDAR"
         android:textAlignment="center"
-        android:textColor="#FFF"
-        android:textSize="23sp"
-
-        />
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="300dp"
@@ -33,23 +32,36 @@
         <CalendarView
             android:id="@+id/calendarView"
             android:layout_width="wrap_content"
-            android:layout_height="320dp"
+            android:layout_height="wrap_content"
             android:animationCache="false">
 
         </CalendarView>
     </LinearLayout>
 
-    <ImageButton
+    <Button
+        android:id="@+id/saveBirthday"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="-5dp"
+        android:background="@android:color/transparent"
+        android:text="SAVE A BIRTHDAY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent" />
+
+    <Button
         android:id="@+id/sendMessage"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="34dp"
-        android:background="@drawable/button"
-        android:paddingLeft="20dp"
-        android:paddingRight="28dp"
-        android:text="Send your birthday wish!"
-        android:textColor="#FFF" />
+        android:layout_height="64dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="SEND YOUR BIRTHDAY WISH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent" />
+
 </LinearLayout>
 
