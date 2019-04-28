@@ -7,6 +7,7 @@ import android.widget.CalendarView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Button;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
@@ -27,14 +28,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button setDate = findViewById(R.id.myDate);
-//        setDate.setOnClickListener(v -> {
-//
-//        });
-//
-//        Button message = findViewById(R.id.sendMessage);
-//        message.setOnClickListener(v -> {
-//
-//        });
+        Button setDate = findViewById(R.id.myDate);
+        setDate.setOnClickListener(v -> {
+
+        });
+
+        Button message = findViewById(R.id.sendMessage);
+        message.setOnClickListener(v -> {
+
+        });
+    }
+    public void sendMessage(View view) {
+        System.out.println("Your happy birthday message has been sent :)");
+    }
+
+    String personName;
+    public void setDate(View view) {
+        System.out.println("Who's birthday is this day?: ");
+        personName = 
     }
 }
