@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,38 +11,43 @@
 
     <TextView
         android:id="@+id/myDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="244dp"
+        android:layout_height="116dp"
         android:layout_marginLeft="90dp"
-        android:layout_marginTop="48dp"
-        android:text="Send your birthday wish!"
+        android:layout_marginTop="100dp"
+        android:text="MARK THE DATE"
         android:textAlignment="center"
         android:textColor="#FFF"
         android:textSize="23sp"
 
         />
+
     <LinearLayout
-        android:layout_marginTop="48dp"
-        android:background="@drawable/background"
-        android:layout_marginLeft="60dp"
         android:layout_width="300dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background">
 
         <CalendarView
+            android:id="@+id/calendarView"
             android:layout_width="wrap_content"
-            android:layout_height="320dp">
+            android:layout_height="320dp"
+            android:animationCache="false">
 
         </CalendarView>
     </LinearLayout>
+
     <Button
-        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
         android:layout_marginTop="34dp"
-        android:text="Send your birthday wish!"
-        android:textColor="#FFF"
+        android:background="@drawable/button"
         android:paddingLeft="20dp"
         android:paddingRight="28dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="Send your birthday wish!"
+        android:textColor="#FFF"
+        />
 </LinearLayout>
 
