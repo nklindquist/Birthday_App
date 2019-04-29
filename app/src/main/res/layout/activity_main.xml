@@ -47,7 +47,8 @@
         android:background="@android:color/transparent"
         android:text="SAVE A BIRTHDAY"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/colorAccent"
+        android:onClick="launchSecondActivity" />
 
     <Button
         android:id="@+id/sendMessage"
