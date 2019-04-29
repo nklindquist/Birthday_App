@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#80D8FF"
     android:orientation="vertical"
-    tools:context=".SaveDate">
+    tools:context=".Date.SaveDate">
 
     <TextView
         android:id="@+id/textView2"
@@ -39,7 +39,7 @@
         android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nameInput"
         android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="95dp"
@@ -50,7 +50,7 @@
         android:textColor="@color/colorAccent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"

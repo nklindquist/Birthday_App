@@ -45,10 +45,10 @@
         android:layout_marginLeft="70dp"
         android:layout_marginTop="-5dp"
         android:background="@android:color/transparent"
+        android:onClick="launchSaveDate"
         android:text="SAVE A BIRTHDAY"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/colorAccent"
-        android:onClick="launchSecondActivity" />
+        android:textColor="@color/colorAccent" />
 
     <Button
         android:id="@+id/sendMessage"
