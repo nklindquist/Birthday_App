@@ -8,6 +8,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Button;
 import android.view.View;
+import java.util.Scanner;
+import android.text.InputType;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
@@ -28,23 +31,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button setDate = findViewById(R.id.myDate);
-        setDate.setOnClickListener(v -> {
-
+        final Button date = findViewById(R.id.saveBirthday);
+        date.setOnClickListener(new View.OnClickListener() {
+            String input = "Who's birthday is this day?: ";
+            public void onClick(View v) {
+                Scanner reader = new Scanner(System.in);
+                myDate.setText(input);
+                //personName = reader.next();
+            }
         });
 
-        Button message = findViewById(R.id.sendMessage);
-        message.setOnClickListener(v -> {
-
+        final Button message = findViewById(R.id.sendMessage);
+        message.setOnClickListener(new View.OnClickListener() {
+            String mes = "Your happy birthday message has been sent :)";
+            public void onClick(View v) {
+                myDate.setText(mes);
+            }
         });
     }
-    public void sendMessage(View view) {
-        System.out.println("Your happy birthday message has been sent :)");
-    }
-
-    String personName;
-    public void setDate(View view) {
-        System.out.println("Who's birthday is this day?: ");
-        personName = 
-    }
+//    public void sendMessage(View view) {
+//        System.out.println("Your happy birthday message has been sent :)");
+//    }
+//
+//    String personName;
+//    public void setDate(View view) {
+//        Scanner reader = new Scanner(System.in);
+//        System.out.println("Who's birthday is this day?: ");
+//        personName = reader.next();
+//    }
 }
