@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchSaveDate(View view) {
         Intent intent = new Intent(this, SaveDate.class);
-        startActivity(intent);
+        MainActivity.this.startActivity(intent);
     }
 //    public void sendMessage(View view) {
 //        System.out.println("Your happy birthday message has been sent :)");
