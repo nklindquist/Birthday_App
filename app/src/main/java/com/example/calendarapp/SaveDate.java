@@ -1,4 +1,4 @@
-package com.example.calendarapp.Date;
+package com.example.calendarapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:background="#80D8FF"
     android:orientation="vertical"
-    tools:context=".Date.SaveDate">
+    tools:context=".SaveDate">
 
-    <TextView
+  <!--  <TextView
         android:id="@+id/textView2"
         android:layout_width="329dp"
         android:layout_height="79dp"
@@ -19,7 +19,7 @@
         android:textScaleX="?attr/dialogCornerRadius"
         android:textSize="36sp"
         app:autoSizeTextType="uniform" />
-
+-->
 
     <ImageView
         android:id="@+id/imageView"

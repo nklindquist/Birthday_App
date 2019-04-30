@@ -9,8 +9,6 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.view.View;
 
-import com.example.calendarapp.Date.SaveDate;
-
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
     TextView myDate;
