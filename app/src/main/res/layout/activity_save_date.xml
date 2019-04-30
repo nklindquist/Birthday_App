@@ -20,6 +20,7 @@
         android:textSize="36sp"
         app:autoSizeTextType="uniform" />
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="286dp"
